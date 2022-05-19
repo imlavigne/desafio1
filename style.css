@@ -6,9 +6,11 @@
 :root {
     --btn-color: #ED6755;
     --btn2-color: #2c3e50;
+    --btnquery-color: green;
+    --btn2query-color: yellow;
 }
 body{
-    background: gray;
+    background-color:grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,4 +64,29 @@ p{
     left: 180px;
     cursor: pointer;
     /* background-color: red; */
+}
+
+
+    
+@media (max-width: 500px) {
+  
+     div{
+        width: 300px;
+        height: 350px;
+    } 
+    .btn{
+        background-color: var(--btnquery-color);
+    }
+    .btn2{
+        background-color: var(--btn2query-color);
+    }
+    p{
+        color: gray;
+        position:relative;
+        top: -5px;
+        left: 120px;
+        cursor: pointer;
+        /* background-color: red; */
+    }
+    
 }
